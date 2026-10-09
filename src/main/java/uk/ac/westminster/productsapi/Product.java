@@ -17,6 +17,10 @@ public class Product {
     public Long getId() {
         return id;
     }
+// Jackson looks for a public getX() method for each field; with no getName() there is nothing for it to call, so the field is skipped.
+//    public String getName() {
+//        return name;
+//    }
 
     public String getName() {
         return name;
